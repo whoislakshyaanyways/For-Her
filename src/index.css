@@ -1,0 +1,232 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Cute pixel-art pink theme */
+    --background: 340 100% 97%;
+    --foreground: 340 50% 20%;
+
+    --card: 340 100% 98%;
+    --card-foreground: 340 50% 20%;
+
+    --popover: 340 100% 98%;
+    --popover-foreground: 340 50% 20%;
+
+    --primary: 330 80% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 280 70% 75%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 340 60% 95%;
+    --muted-foreground: 340 30% 50%;
+
+    --accent: 170 60% 70%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 330 100% 85%;
+    --input: 330 100% 90%;
+    --ring: 330 80% 60%;
+
+    --radius: 0.75rem;
+
+    /* Custom colors for the pixel theme */
+    --pixel-pink: 330 100% 70%;
+    --pixel-pink-light: 330 100% 85%;
+    --pixel-pink-dark: 330 80% 50%;
+    --pixel-purple: 280 70% 75%;
+    --pixel-teal: 170 60% 70%;
+    --pixel-cream: 40 100% 95%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(330 100% 75%), hsl(280 70% 80%));
+    --gradient-glow: linear-gradient(180deg, hsl(330 100% 95%), hsl(340 100% 97%));
+
+    /* Shadows */
+    --shadow-pixel: 4px 4px 0px hsl(330 80% 50%);
+    --shadow-soft: 0 8px 24px hsl(330 100% 70% / 0.3);
+
+    /* Animations */
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 340 40% 12%;
+    --foreground: 340 100% 95%;
+
+    --card: 340 40% 15%;
+    --card-foreground: 340 100% 95%;
+
+    --popover: 340 40% 15%;
+    --popover-foreground: 340 100% 95%;
+
+    --primary: 330 80% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 280 50% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 340 40% 20%;
+    --muted-foreground: 340 50% 70%;
+
+    --accent: 170 50% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 330 50% 25%;
+    --input: 330 40% 20%;
+    --ring: 330 80% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .pixel-font {
+    font-family: 'Press Start 2P', cursive;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  /* Floating animation for hearts */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-20px) rotate(5deg);
+    }
+  }
+
+  @keyframes float-slow {
+    0%, 100% {
+      transform: translateY(0px) translateX(0px);
+    }
+    50% {
+      transform: translateY(-30px) translateX(10px);
+    }
+  }
+
+  @keyframes bounce-in {
+    0% {
+      transform: scale(0) rotate(-180deg);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2) rotate(10deg);
+    }
+    100% {
+      transform: scale(1) rotate(0deg);
+      opacity: 1;
+    }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+    }
+    50% {
+      box-shadow: 0 0 40px hsl(var(--primary) / 0.6);
+    }
+  }
+
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+  }
+
+  @keyframes confetti-fall {
+    0% {
+      transform: translateY(-100vh) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(720deg);
+      opacity: 0;
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-float-slow {
+    animation: float-slow 4s ease-in-out infinite;
+  }
+
+  .animate-bounce-in {
+    animation: bounce-in 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-shake {
+    animation: shake 0.5s ease-in-out;
+  }
+
+  .animate-confetti {
+    animation: confetti-fall 3s linear forwards;
+  }
+
+  /* Pixel-perfect borders */
+  .pixel-border {
+    border: 4px solid hsl(var(--border));
+    box-shadow: var(--shadow-pixel);
+    image-rendering: pixelated;
+  }
+
+  .pixel-border-glow {
+    border: 4px solid hsl(var(--primary));
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.4), var(--shadow-pixel);
+  }
+
+  /* Hover effects */
+  .hover-lift {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 0px hsl(var(--primary-dark));
+  }
+}
