@@ -5,6 +5,8 @@
   "type": "module",
 
   "homepage": "https://whoislakshyaanyways.github.io/For-Her/",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
 
 "scripts": {
   "dev": "vite",
