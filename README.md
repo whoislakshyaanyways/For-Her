@@ -1,73 +1,50 @@
-# Welcome to your Lovable project
+# 💗 For Her — A Little Website for a Big Feeling
 
-## Project info
+It’s a *digital love letter*, a *confession page*, a *pixel-heart explosion*,  
+and basically my attempt at saying:
 
-**URL**: https://lovable.dev/projects/2aba7698-6b7c-4fa5-a0f4-7b978f2646ac
+> **“I really, really like you.  
+> Like… girlfriend-level like you.”**
 
-## How can I edit this code?
+So I built a website for it!!
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## ✨ What This Website Is
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2aba7698-6b7c-4fa5-a0f4-7b978f2646ac) and start prompting.
+This site is a cute, animated, slightly dramatic (but in a good way) page I built to confess my feelings to someone very special.  
+You know who you are.  
+And if you're reading this… hi. 👀
 
-Changes made via Lovable will be committed automatically to this repo.
+It includes:
 
-**Use your preferred IDE**
+- Soft animations  
+- Floating hearts  
+- Pixel art vibes  
+- A heartfelt message  
+- And a VERY important question  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠 Tech Stack
 
-Follow these steps:
+Because even love needs a good frontend.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+<p align="left"> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> </p>
+- And a LOT of feelings ❤️
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🚀 Why I Built This
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Because some feelings deserve more than a text message.  
+Some deserve a whole website.
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🧸 Final Notes
 
-**Use GitHub Codespaces**
+If you stumbled here by accident,  
+well… now you know I’m down bad enough to deploy to GitHub Pages.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/2aba7698-6b7c-4fa5-a0f4-7b978f2646ac) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
